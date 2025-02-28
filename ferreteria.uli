@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Ferretería</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Ferretería</h1>
+        <p>¡Todo lo que necesitas para construir!</p>
+    </header>
+
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="producto">
+            <p>Martillo - $150</p>
+            <button onclick="agregarAlCarrito('Martillo', 150)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </section>
+
+    <footer>
+        <p>Contactanos: +54 9 1234-5678</p>
+    </footer>
+</body>
+</html>
+
